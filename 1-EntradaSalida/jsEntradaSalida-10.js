@@ -1,9 +1,12 @@
-/*
-Debemos lograr tomar el importe por ID.
-Transformarlo a entero (parseInt), luego
-mostrar el importe con un Descuento del 25 %
-en el cuadro de texto "RESULTADO"*/
+/*10 bis*/
 function mostrarAumento()
 {
-	alert("ok");
+	var sueldo
+	var resultado 
+
+    sueldo=document.getElementById('txtIdImporte').value;
+    porcentajeSoli= prompt("ingrese el porcentaje al cual desea disminuir su sueldo");
+    resultado=parseInt (sueldo) - parseInt (porcentajeSoli * sueldo / 100); 
+    document.getElementById('txtIdResultado').value = resultado;
+    
 }
