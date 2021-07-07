@@ -11,6 +11,7 @@ var promedio
 var precioFinal
 
 function Sumar () 
+<<<<<<< HEAD
 { precioUno=document.getElementById('txtIdPrecioUno').value;
  precioDos=document.getElementById('txtIdPrecioDos').value;
  precioTres=document.getElementById('txtIdPrecioTres').value;
@@ -34,5 +35,51 @@ function PrecioFinal ()
  suma=parseInt(precioUno)+parseInt(precioDos)+parseInt(precioTres);
  precioFinal=suma+(suma*0.21);
  alert("el precio final es "+precioFinal+" con iva incluido");
+=======
+{   var precioUno;/declaro las variables/
+	var precioDos;
+	var precioTres;
+    var suma;
+
+	precioUno=document.getElementById('txtIdPrecioUno').value;/ingreso los valores con get element/
+	precioDos=document.getElementById('txtIdPrecioDos').value;
+	precioTres=document.getElementById('txtIdPrecioTres').value;
+
+	suma=parseInt(precioUno)+parseInt(precioDos)+parseInt(precioTres);/sumo los valores con parse int/
+    
+    alert("la suma de los tres precios es "+suma);/muestro en pantalla/
+}
+function Promedio () 
+{   var precioUno;/declaro las variables/
+	var precioDos;
+	var precioTres;
+    var promedio;
+
+	precioUno=document.getElementById('txtIdPrecioUno').value;/ingreso los valores con get element/
+	precioDos=document.getElementById('txtIdPrecioDos').value;
+	precioTres=document.getElementById('txtIdPrecioTres').value;
+
+	promedio=parseInt(precioUno)+parseInt(precioDos)+parseInt(precioTres);/sumo los tres numeros/
+	promedio=promedio/3;/divido por tres para promediar/
+    
+    alert("el promedio de los tres precios es "+promedio);/muestro en pantalla/
+	
+}
+function PrecioFinal () 
+{  var precioUno;/declaro las variables/
+	var precioDos;
+	var precioTres;
+	var suma
+    var precioFinal;
+
+	precioUno=document.getElementById('txtIdPrecioUno').value;/ingreso los valores con get element/
+	precioDos=document.getElementById('txtIdPrecioDos').value;
+	precioTres=document.getElementById('txtIdPrecioTres').value;
+
+	suma=parseInt(precioUno)+parseInt(precioDos)+parseInt(precioTres);/sumo los valores para luego agregar el iva/
+	precioFinal=suma+(21*suma/100);/agrego el iva/
+    
+    alert("el precio final es "+precioFinal+" con iva incluido");/muestro en pantalla/
+>>>>>>> 2366345fd370b036d72cb3dc52bb38d6bfc21d4f
 	
 }
