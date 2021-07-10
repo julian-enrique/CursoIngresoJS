@@ -7,8 +7,8 @@ function mostrarAumento()
 
     sueldo=document.getElementById('txtIdSueldo').value;
     porcentajeSoli= prompt("ingrese el porcentaje al cual desea incrementar su sueldo");
-    resultado=parseInt (sueldo) 
-    resultado=resultado + parseInt (porcentajeSoli * sueldo/100);
+    resultado=parseFloat (sueldo) 
+    resultado=resultado + parseFloat (porcentajeSoli * sueldo/100);
     document.getElementById('txtIdResultado').value = resultado;
     
 }

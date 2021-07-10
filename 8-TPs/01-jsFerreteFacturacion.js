@@ -11,7 +11,7 @@ var promedio
 var precioFinal
 
 function Sumar () 
-<<<<<<< HEAD
+
 { precioUno=document.getElementById('txtIdPrecioUno').value;
  precioDos=document.getElementById('txtIdPrecioDos').value;
  precioTres=document.getElementById('txtIdPrecioTres').value;
@@ -35,7 +35,7 @@ function PrecioFinal ()
  suma=parseInt(precioUno)+parseInt(precioDos)+parseInt(precioTres);
  precioFinal=suma+(suma*0.21);
  alert("el precio final es "+precioFinal+" con iva incluido");
-=======
+
 {   var precioUno;/declaro las variables/
 	var precioDos;
 	var precioTres;
@@ -79,7 +79,6 @@ function PrecioFinal ()
 	suma=parseInt(precioUno)+parseInt(precioDos)+parseInt(precioTres);/sumo los valores para luego agregar el iva/
 	precioFinal=suma+(21*suma/100);/agrego el iva/
     
-    alert("el precio final es "+precioFinal+" con iva incluido");/muestro en pantalla/
->>>>>>> 2366345fd370b036d72cb3dc52bb38d6bfc21d4f
-	
+    alert("el precio final es "+precioFinal+" con iva incluido");//muestro en pantalla/
+
 }
